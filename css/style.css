@@ -1,0 +1,146 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.page{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+h2,h3,p{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-color: lightgrey;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+h2{
+    font-size: 20px;
+}
+p{
+    font-size: 15px;
+    margin: 10px auto;
+}
+.header-left__list{
+    display: none;
+    position: relative;
+}
+.header-left{
+    display: block;
+    margin-left: 20px;
+    padding: 10px;
+    color: lightgrey;
+}
+
+.header-left:hover > .header-left__list{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    display: block;
+    z-index: 1;
+    border: 2px solid black;
+    background-color: #fff;
+    padding: 10px 30px;
+}
+.header__list_firstlevel{
+    position: relative;
+}
+.header__list_level{
+    display: none;
+}
+.header__list_submenu{
+    display: none;
+}
+
+.header__list_firstlevel:hover > .header__list_submenu {
+    position: absolute;
+    top: 0px;
+    left: 201px;
+    display: block;
+    z-index: 2;
+    border: 2px solid black;
+    background-color: #fff;
+    padding: 10px 30px;
+    color: black;
+}
+
+.header-right{
+    margin-right: 20px;
+    padding: 10px;
+    color: lightgrey;
+}
+.grid.default {
+    display: grid;
+    width: 83%;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 122px auto;
+    text-align: center;
+}
+.hovered {
+    width: 83%;
+    grid-template-columns:(auto-fill);
+    margin: 50px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.default .item {
+    background-color: lightgrey;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.hovered .item{
+    background-color: #fff;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid grey;
+}
+.hovered .item__desc{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 50%;
+    align-items: center;
+}
+.hovered h3{
+    margin-right: 30px;
+
+}
+.hovered h2{
+    padding: 20px;
+}
+
+.item__img{
+    border: 1px solid yellow;
+    position: relative;
+    margin: 20px auto;
+}
+.item__price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.default .item__price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right:hover > .item {
+    background-color: lightgrey;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Techelement_test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hover_me').mouseover(function(e) {
+                $('#work_area').removeClass('default');
+                $('#work_area').addClass('hovered');
+            });
+            $('#hover_me').mouseleave(function(e) {
+                $('#work_area').removeClass('hovered');
+                $('#work_area').addClass('default');
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <div class="header-left">menu left
+            <ul class="header-left__list"><a href="">Каталог оборудования</a>
+                <li class="header__list_firstlevel"><a href="">1уровень</a>
+                    <ul class="header__list_submenu">
+                        <li><a href="">2уровень</a>
+                            <ul>
+                                <li><a href="">3уровень</a>
+                                    <ul>
+                                        <li>4уровень</li>
+                                        <li>4уровень</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">1уровень</a></li>
+                <li class="header__list_firstlevel"><a href="">1уровень</a>
+                    <ul class="header__list_submenu">
+                        <li><a href="">2уровень</a>
+                            <ul>
+                                <li><a href="">3уровень</a>
+                                    <ul>
+                                        <li>4уровень</li>
+                                        <li>4уровень</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">1уровень</a></li>
+                <li><a href="">1уровень</a></li>
+            </ul>
+        </div>
+        <div class="header-right" id="hover_me">Menu-right</div>
+    </div>
+    <div class="grid default" id="work_area">
+        <div class="item">
+            <img src="templ.jpg" class="item__img" alt="photo">
+            <div class="item__desc">
+               <h3 id="item1_title" contenteditable="true">Triton</h3>
+                <button id="save" style="display: none">Готов</button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, dolorem, doloribu</p>
+
+            </div>
+            <div class="item__price">
+                <h2>350 000 руб</h2>
+                <button class="item__btn">Купить</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="templ.jpg" class="item__img" alt="photo">
+            <div class="item__desc">
+                <h3 id="item2_title" contenteditable="true">Triton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, dolorem, doloribu</p>
+            </div>
+            <div class="item__price">
+                <h2>350 000 руб</h2>
+                <button class="item__btn">Купить</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="templ.jpg" class="item__img" alt="photo">
+            <div class="item__desc">
+                <h3 id="item3_title" contenteditable="true">Triton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, dolorem, doloribu</p>
+            </div>
+            <div class="item__price">
+                <h2>350 000 руб</h2>
+                <button class="item__btn">Купить</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="templ.jpg" class="item__img" alt="photo">
+            <div class="item__desc">
+                <h3 id="item4_title" contenteditable="true">Triton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, dolorem, doloribu</p>
+            </div>
+            <div class="item__price">
+                <h2>350 000 руб</h2>
+                <button class="item__btn">Купить</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="templ.jpg" class="item__img" alt="photo">
+            <div class="item__desc">
+                <h3 id="item5_title" contenteditable="true">Triton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, dolorem, doloribu</p>
+            </div>
+            <div class="item__price">
+                <h2>350 000 руб</h2>
+                <button class="item__btn">Купить</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="templ.jpg" class="item__img" alt="photo">
+            <div class="item__desc">
+                <h3 id="item6_title" contenteditable="true">Triton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, dolorem, doloribu</p>
+            </div>
+            <div class="item__price">
+                <h2>350 000 руб</h2>
+                <button class="item__btn">Купить</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="templ.jpg" class="item__img" alt="photo">
+            <div class="item__desc">
+                <h3 id="item7_title" contenteditable="true">Triton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, dolorem, doloribu</p>
+            </div>
+            <div class="item__price">
+                <h2>350 000 руб</h2>
+                <button class="item__btn">Купить</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="templ.jpg" class="item__img" alt="photo">
+            <div class="item__desc">
+                <h3 id="item8_title" contenteditable="true">Triton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, dolorem, doloribu</p>
+            </div>
+            <div class="item__price">
+                <h2>350 000 руб</h2>
+                <button class="item__btn">Купить</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="templ.jpg" class="item__img" alt="photo">
+            <div class="item__desc">
+                <h3 id="item9_title" contenteditable="true">Triton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, dolorem, doloribu</p>
+            </div>
+            <div class="item__price">
+                <h2>350 000 руб</h2>
+                <button class="item__btn">Купить</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="templ.jpg" class="item__img" alt="photo">
+            <div class="item__desc">
+                <h3 id="item10_title" contenteditable="true">Triton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, dolorem, doloribu</p>
+            </div>
+            <div class="item__price">
+                <h2>350 000 руб</h2>
+                <button class="item__btn">Купить</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="templ.jpg" class="item__img" alt="photo">
+            <div class="item__desc">
+                <h3 id="item11_title" contenteditable="true">Triton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, dolorem, doloribu</p>
+            </div>
+            <div class="item__price">
+                <h2>350 000 руб</h2>
+                <button class="item__btn">Купить</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="templ.jpg" class="item__img" alt="photo">
+            <div class="item__desc">
+                <h3 id="item12_title" contenteditable="true">Triton</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, dolorem, doloribu</p>
+            </div>
+            <div class="item__price">
+                <h2>350 000 руб</h2>
+                <button class="item__btn">Купить</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
