@@ -10,20 +10,9 @@
     <title>Techelement_test</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#hover_me').mouseover(function(e) {
-                $('#work_area').removeClass('default');
-                $('#work_area').addClass('hovered');
-            });
-            $('#hover_me').mouseleave(function(e) {
-                $('#work_area').removeClass('hovered');
-                $('#work_area').addClass('default');
-            });
-        });
-    </script>
-</head>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+  </head>
 <body>
 <div class="page">
     <div class="header">
@@ -71,7 +60,6 @@
                <h3 id="item1_title" contenteditable="true">Triton</h3>
                 <button id="save" style="display: none">Готов</button>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, dolorem, doloribu</p>
-
             </div>
             <div class="item__price">
                 <h2>350 000 руб</h2>
@@ -201,6 +189,23 @@
         </div>
     </div>
     </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#hover_me').mouseover(function(e) {
+            $('#work_area').removeClass('default');
+            $('#work_area').addClass('hovered');
+        });
+        $('#hover_me').mouseleave(function(e) {
+            $('#work_area').removeClass('hovered');
+            $('#work_area').addClass('default');
+        });
+    });
+</script>
+<<script>
+    $('#work_area').sortable({
+        revert: 100
+    });
+</script>
 </body>
 </html>

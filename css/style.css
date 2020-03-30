@@ -84,7 +84,7 @@ p{
 }
 .hovered {
     width: 83%;
-    grid-template-columns:(auto-fill);
+    grid-template-columns: repeat(auto-fill, 250px);
     margin: 50px auto;
     justify-content: space-between;
     align-items: center;
@@ -142,5 +142,9 @@ p{
     flex-direction: row;
     padding: 10px;
 }
+#work_area{
+    overflow: hidden;
+}
+
 
 
